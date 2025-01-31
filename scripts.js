@@ -26,7 +26,7 @@ function displayScripts(scriptsToShow) {
         copyButton.textContent = 'Copy';
         copyButton.onclick = () => {
             navigator.clipboard.writeText(script.Script).then(() => {
-                alert('Скопировано в буфер обмена!');
+                
             });
         };
         scriptItem.appendChild(copyButton);
