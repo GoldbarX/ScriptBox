@@ -89,7 +89,7 @@ h1 {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Стили для поля поиска */
+
 #search {
     width: 100%; /* Ширина как у плиток */
     max-width: 600px; /* Ограничиваем максимальную ширину */
