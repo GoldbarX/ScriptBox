@@ -90,6 +90,7 @@ h1 {
     border-radius: 5px;
     color: white;
     transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 20px; /* Отступ снизу, чтобы кнопка была ближе к полю */
 }
 
 /* Стили кнопки при нажатии */

@@ -4,7 +4,6 @@ const scripts = [
 ];
 // Code
 
-// Код для кнопки и поиска
 document.getElementById('star-button').addEventListener('click', function() {
     const searchInput = document.getElementById('search');
     
@@ -12,9 +11,11 @@ document.getElementById('star-button').addEventListener('click', function() {
     if (this.classList.contains('active')) {
         this.classList.remove('active');
         searchInput.value = ''; // Очищаем поле
+        searchInput.removeAttribute('readonly'); // Разблокируем поле для редактирования
     } else {
         this.classList.add('active');
         searchInput.value = '⭐'; // Вставляем символ ⭐ в поле
+        searchInput.setAttribute('readonly', 'true'); // Блокируем поле от редактирования
     }
 });
 
