@@ -1,0 +1,80 @@
+/* Устанавливаем фон для всей страницы */
+body {
+    background-color: rgb(20, 20, 20);
+    color: white; /* Белый текст для контраста */
+    font-family: 'Microsoft YaHei UI', sans-serif; /* Шрифт */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое по горизонтали */
+}
+
+/* Стили для заголовка */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* Центрируем текст */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для поля поиска */
+#search {
+    width: 100%; /* Ширина как у плиток */
+    max-width: 600px; /* Ограничиваем максимальную ширину */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: rgb(40, 40, 40); /* Темный фон для поля поиска */
+    color: white; /* Белый текст */
+    border: 1px solid rgb(60, 60, 60); /* Граница */
+    border-radius: 5px; /* Закругленные углы */
+    font-family: 'Microsoft YaHei UI', sans-serif; /* Шрифт */
+    transform: scale(1.0); /* Увеличение элемента при наведении */
+    transition: transform 0.2s ease;
+}
+
+/* Стили для контейнера со скриптами */
+#script-list {
+    width: 100%;
+    max-width: 600px; /* Ширина как у поля поиска */
+}
+
+/* Стили для каждого элемента скрипта */
+.script-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(30, 30, 30); /* Темный фон для элементов */
+    border-radius: 5px; /* Закругленные углы */
+    font-family: 'Microsoft YaHei UI', sans-serif; /* Шрифт */
+}
+
+/* Стили для изображения в элементе скрипта */
+.script-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px; /* Закругленные углы для изображения */
+}
+
+/* Стили для кнопки "Copy" */
+.script-item button {
+    margin-left: auto;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgb(50, 50, 50); /* Темный фон для кнопки */
+    color: white; /* Белый текст */
+    border: 1px solid rgb(70, 70, 70); /* Граница */
+    border-radius: 5px; /* Закругленные углы */
+    font-family: 'Microsoft YaHei UI', sans-serif; /* Шрифт */
+    transform: scale(1); /* Увеличение элемента при наведении */
+    transition: transform 0.2s ease;
+}
+
+/* Стили для кнопки "Copy" при наведении */
+.script-item button:hover {
+    background-color: rgb(70, 70, 70); /* Изменение фона при наведении */
+    transform: scale(1.1); /* Увеличение элемента при наведении */
+    transition: transform 0.2s ease;
+}
