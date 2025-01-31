@@ -91,17 +91,18 @@ h1 {
 
 /* Стили для поля поиска */
 #search {
-    width: 100%; /* Поле поиска будет растягиваться */
-    max-width: 600px; /* Ограничим максимальную ширину */
-    height: 50px; /* Высота поиска = высоте кнопки */
-    font-size: 16px; /* Размер шрифта */
-    padding: 0 10px; /* Отступы слева и справа */
-    background-color: rgb(40, 40, 40); /* Темный фон */
-    color: white;
-    border: 1px solid rgb(60, 60, 60);
-    border-radius: 5px;
-    font-family: 'Microsoft YaHei UI', sans-serif;
-    transition: background-color 0.3s;
+    width: 100%; /* Ширина как у плиток */
+    max-width: 600px; /* Ограничиваем максимальную ширину */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: rgb(40, 40, 40); /* Темный фон для поля поиска */
+    color: white; /* Белый текст */
+    border: 1px solid rgb(60, 60, 60); /* Граница */
+    border-radius: 5px; /* Закругленные углы */
+    font-family: 'Microsoft YaHei UI', sans-serif; /* Шрифт */
+    transform: scale(1.0); /* Увеличение элемента при наведении */
+    transition: transform 0.2s ease;
 }
 
 /* Стили для кнопки при нажатии */
