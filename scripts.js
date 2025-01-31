@@ -1,10 +1,9 @@
 // Data
 const scripts = [
     { Name: "⭐ | Infinite Yield", Script: "loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()", Image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fofficial-jjsploit.com%2Fwp-content%2Fuploads%2F2023%2F05%2FInfinite-Yield-Free-Download.webp&f=1&nofb=1&ipt=85da040fdea573fb8cf4c020d0118fcd229e22dac4c2eb58eaba177f41c11ba2&ipo=images" },
-    // Можете добавить другие скрипты
 ];
 
-// Функция для отображения скриптов
+// Code
 function displayScripts(scriptsToShow) {
     const scriptList = document.getElementById('script-list');
     scriptList.innerHTML = '';
@@ -34,29 +33,23 @@ function displayScripts(scriptsToShow) {
     });
 }
 
-// Функция фильтрации скриптов
 function filterScripts(query) {
     return scripts.filter(script =>
         script.Name.toLowerCase().includes(query.toLowerCase())
     );
 }
 
-// Инициализация
 function init() {
     const searchInput = document.getElementById('search');
     const starButton = document.getElementById('star-button');
 
-    // Отображаем все скрипты изначально
     displayScripts(scripts);
 
-    // Слушаем изменения в поле поиска
     searchInput.addEventListener('input', () => {
         const query = searchInput.value;
         const filteredScripts = filterScripts(query);
         displayScripts(filteredScripts);
     });
-
-    // Обработчик для кнопки звезды
     starButton.addEventListener('click', () => {
         if (starButton.classList.contains('active')) {
             // Если кнопка уже активирована, деактивируем её
