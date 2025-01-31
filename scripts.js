@@ -3,6 +3,22 @@ const scripts = [
     { Name: "⭐ | Infinite Yield", Script: "loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()", Image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fofficial-jjsploit.com%2Fwp-content%2Fuploads%2F2023%2F05%2FInfinite-Yield-Free-Download.webp&f=1&nofb=1&ipt=85da040fdea573fb8cf4c020d0118fcd229e22dac4c2eb58eaba177f41c11ba2&ipo=images" },
 ];
 // Code
+
+// Код для кнопки и поиска
+document.getElementById('star-button').addEventListener('click', function() {
+    const searchInput = document.getElementById('search');
+    
+    // Если кнопка активна (синий цвет), то убираем её активность
+    if (this.classList.contains('active')) {
+        this.classList.remove('active');
+        searchInput.value = ''; // Очищаем поле
+    } else {
+        this.classList.add('active');
+        searchInput.value = '⭐'; // Вставляем символ ⭐ в поле
+    }
+});
+
+
 function displayScripts(scriptsToShow) {
     const scriptList = document.getElementById('script-list');
     scriptList.innerHTML = '';
