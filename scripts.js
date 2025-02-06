@@ -3,6 +3,7 @@
 const scripts = [
     { Name: "⭐ | Infinite Yield", Script: "loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()", Image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fofficial-jjsploit.com%2Fwp-content%2Fuploads%2F2023%2F05%2FInfinite-Yield-Free-Download.webp&f=1&nofb=1&ipt=85da040fdea573fb8cf4c020d0118fcd229e22dac4c2eb58eaba177f41c11ba2&ipo=images" },
     { Name: "⭐ | Xeon: Rivals hub", Script: "loadstring(game:HttpGet('https://raw.githubusercontent.com/Eternal-Kids/Xeon/refs/heads/main/src/main.lua'))()", Image: "" },
+    { Name: "UNC Test", Script: "loadstring(game:HttpGet('https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua', true))()", Image: "https://cdn.discordapp.com/attachments/1337086333419651092/1337086374112919632/image.png?ex=67a62a39&is=67a4d8b9&hm=e17f1cec6c833a2f066920c51f0d627ba375c16e45ee67746a847d4545a53a88&" },
     { Name: "Phoenix P*DR", Script: "loadstring(game:HttpGet('https://pastebin.com/raw/3A1FSfxk'))()", Image: "https://cdn.discordapp.com/attachments/1316879873972899920/1316879874262302751/image.png?ex=679de9b4&is=679c9834&hm=55ddf48db0cab9b490a993e06f6b49b3391d340fa8516327f879cc988ec17db7&" },
 ];
 
